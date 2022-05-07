@@ -1,0 +1,83 @@
+.training {
+    max-width: 1530px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+
+    &__title {
+        max-width: 679px;
+        margin: 0 auto 23px;
+        text-align: center;
+        font-family: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: #331a2f;
+    }
+
+    &__title-company {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            border-radius: 5px;
+            background: linear-gradient(265deg, #7c4eab 0.73%, #dd51d4 95.85%);
+            height: 7px;
+            width: 100%;
+        }
+    }
+
+    &__title-four {
+        color: #ea5dbb;
+    }
+
+    &__desc {
+        max-width: 846px;
+        text-align: center;
+        margin: 23px auto 0;
+        font-size: 25px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    &__advantages {
+        margin-top: 85px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__advantage {
+        max-width: 290px;
+    }
+
+    &__advantage-image-container {
+        background: #CF51CE;
+        border-radius: 10px;
+        padding: 11px;
+        width: 70px;
+        height: 70px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    &__advantage-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    &__advantage-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: #331a2f;
+        margin-bottom: 15px;
+    }
+
+    &__advantage-desc {
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+}

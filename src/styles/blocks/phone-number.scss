@@ -1,0 +1,13 @@
+.phone-number {
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: 35px;
+        color: #331a2f;
+    }
+}

@@ -1,0 +1,32 @@
+.main-news {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1530px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 147px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 80px;
+        color: #331a2f;
+    }
+
+    &_selected {
+        color: #cf51ce;
+    }
+
+    &__desc {
+        font-size: 25px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    &__image {
+        height: 560px;
+        width: 560px;
+        margin-left: 60px;
+    }
+
+}

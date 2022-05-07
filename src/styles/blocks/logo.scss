@@ -1,0 +1,39 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 60px;
+        height: 58px;
+        //margin-right: 18px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.01em;
+        color: #54618e;
+        padding: 9px;
+    }
+
+    &__four {
+        color: #d653d2
+    }
+
+    &__line {
+        width: 80px;
+        height: 0;
+        border: 1px solid rgba(51, 26, 47, 0.5);
+        //margin: 0 25px 0 19px;
+        transform: rotate(90deg);
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(51, 26, 47, 0.5);
+        max-width: 204px;
+    }
+}

@@ -1,0 +1,23 @@
+.login-button {
+    padding: 5px 32px;
+    background: #cf51ce;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 23px;
+        height: 23px;
+        margin-right: 14px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 35px;
+        color: #ffffff;
+    }
+}

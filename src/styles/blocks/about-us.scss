@@ -1,0 +1,34 @@
+.about-us {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 140px;
+
+    &__title {
+        margin: 0 auto 85px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        color: #331a2f;
+        max-width: 844px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__item-desc {
+        font-size: 25px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+        max-width: 750px;
+    }
+}
