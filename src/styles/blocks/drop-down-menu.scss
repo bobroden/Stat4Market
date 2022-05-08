@@ -1,9 +1,22 @@
 .drop-down-menu {
     font-size: 24px;
     line-height: 35px;
-    color: #331a2f;
+    color: $color-accent;
     border: none;
     outline: none;
     padding-right: 11px;
-    margin-right: 50px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1400px) {
+    .drop-down-menu {
+        font-size: 18px;
+        padding-right: 9px;
+        height: 36px;
+        margin-top: 7px;
+    }
 }

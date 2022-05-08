@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/logo.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Stat4Market</title>
 </head>
 <body>
@@ -24,12 +21,12 @@
                 <h1 class="logo__title">
                     stat<span class="logo__four">4</span>market
                 </h1>
-                <div class="logo__line"></div>
                 <p class="logo__desc">
                     Надежный сервис
                     <br>
-                    аналитики для поставщиков на
-                    маркетплейсы
+                    аналитики для поставщиков
+                    <br>
+                    на маркетплейсы
                 </p>
             </div>
 
@@ -62,13 +59,16 @@
                 <span class="login-button__text">Войти</span>
             </button>
 
+            <svg class="burger-menu">
+                <use xlink:href="#burger"></use>
+            </svg>
         </div>
 
     </header>
 
     <div class="way-menu">
         <a class="way-menu__irem">Главная</a>
-        -
+        –
         <a class="way-menu__irem">Обучение</a>
     </div>
 
@@ -98,6 +98,7 @@
                 Добро пожаловать в Академию. Это место для
                 эффективного обучения, где мы рассказываем,
                 как работают маркетплейсы и никогда не вдаемся 
+                <br>
                 в теорию, которая не понадобится на практике.
             </p>
             <p class="main-news__desc">
@@ -105,6 +106,10 @@
                 и взять управление продажами в свои руки, а не
                 действовать наугад. Становись экспертом в работе
                 с маркетплейсами и увеличивай свою прибыль.
+                <span class="main-news__desc_additional">
+                    — мы разработали курсы, которые приведут тебя
+                    к результату быстро и захватывающе.
+                </span>
             </p>
         </div>
         <img src="./assets/images/superman.jpg" alt="Superman" class="main-news__image">
@@ -116,8 +121,11 @@
         <h3 class="about-us__title">
             Небольшая предыстория о том, почему нам можно доверять
         </h3>
+        <h3 class="about-us__title_aditional">
+            Как работает модуль Аналитика по API для Wildberries?
+        </h3>
         <div class="about-us__item">
-            <img src="./assets/images/about-us-1.jpg" alt="About us image 1" class="about-us__item-image">
+            <img src="./assets/images/about-us-1.jpg" alt="About us image 1" class="about-us__item-image about-us__item-image_left">
             <div class="about-us__item-text-container">
                 <p class="about-us__item-desc">
                     Свой путь в бизнесе мы начали в 2016 г.
@@ -131,7 +139,7 @@
             </div>
         </div>
         <div class="about-us__item">
-            <img src="./assets/images/about-us-2.jpg" alt="About us image 2" class="about-us__item-image">
+            <img src="./assets/images/about-us-2.jpg" alt="About us image 2" class="about-us__item-image about-us__item-image_right about-us__item-image_for-phone">
             <div class="about-us__item-text-container">
                 <p class="about-us__item-desc">
                     Летом 2019 года мы вышли на маркетплейсы и после
@@ -140,12 +148,13 @@
                     Весь накопленный опыт мы направили на улучшение и
                     продвижение наших брендов.
                 </p>
-                <p class="about-us__item-desc">
+                <p class="about-us__item-desc about-us__item-desc_second">
                     Пришло время поделится знаниями и лайфхаками,
                     которые будут собраны и доступны в нашей Академии
                     stat4market.
                 </p>
             </div>
+            <img src="./assets/images/about-us-2.jpg" alt="About us image 2" class="about-us__item-image about-us__item-image_right">
         </div>
     </div>
 
@@ -156,8 +165,8 @@
         </h3>
         <p class="training__desc">
             «Увеличение реальной прибыли, конкретика и ключевые
-            инструменты, которые дают результат» — на этом
-            тезисе созданы наши курсы
+            инструменты, которые дают результат» — на этом тезисе
+            созданы наши курсы
         </p>
         <div class="training__advantages">
             <div class="training__advantage">

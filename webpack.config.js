@@ -26,7 +26,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
 			patterns: [
-			  { from: "assets/images", to: "assets/images" }
+			  { from: "assets/images", to: "assets/images" },
+              { from: "assets/fonts", to: "assets/fonts" }
 			],
 		}),
         new MiniCssExtractPlugin({

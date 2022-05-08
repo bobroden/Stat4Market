@@ -1,4 +1,7 @@
 @import "./reset.scss";
+@import "./fonts.scss";
+
+@import "./variables.scss";
 
 @import "./blocks/header.scss";
 @import "./blocks/left-circle.scss";
@@ -13,9 +16,10 @@
 @import "./blocks/right-circle.scss";
 @import "./blocks/about-us.scss";
 @import "./blocks//training.scss";
+@import "./blocks/burger-menu.scss";
 
 body {
-    font-family: Lato;
+    @extend %main-font;
     background: #fafafa;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow-x: hidden;

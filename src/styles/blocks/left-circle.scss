@@ -3,3 +3,18 @@
     left: -677px;
     top: -200px;
 }
+
+@media (max-width: 1700px) {
+    .left-circle {
+        left: -435px;
+        top: -110px;
+        width: 446px;
+        height: 447px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-circle {
+        display: none;
+    }
+}

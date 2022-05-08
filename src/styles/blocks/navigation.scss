@@ -1,9 +1,35 @@
 .navigation {
     display: flex;
+    padding-left: 45px;
 
     &__item {
         font-size: 24px;
         line-height: 35px;
-        color: #331a2f;
+        color: $color-accent;
+        padding-top: 4px;
+        margin-left: 46px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .navigation {
+        padding-left: 50px;
+
+        &__item {
+            font-size: 18px;
+            margin-left: 39px;
+            padding-top: 8px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .navigation {
+        display: none;
     }
 }

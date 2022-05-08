@@ -3,3 +3,9 @@
     right: -744px;
     top: 372px;
 }
+
+@media (max-width: 1400px) {
+    .right-circle {
+        display: none;
+    }
+}

@@ -1,39 +1,130 @@
 .logo {
     display: flex;
-    align-items: center;
+    padding-left: 5px;
 
     &__icon {
         width: 60px;
         height: 58px;
-        //margin-right: 18px;
+        margin-right: 8px;
+        cursor: pointer;
     }
 
     &__title {
+        @extend %bold-font;
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
         letter-spacing: -0.01em;
         color: #54618e;
-        padding: 9px;
+        padding: 8px 6px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            width: 80px;
+            height: 0;
+            border: 1px solid rgba(51, 26, 47, 0.5);
+            transform: rotate(90deg);
+            position: absolute;
+            top: 29px;
+            right: -50px;
+        }
     }
 
     &__four {
         color: #d653d2
     }
 
-    &__line {
-        width: 80px;
-        height: 0;
-        border: 1px solid rgba(51, 26, 47, 0.5);
-        //margin: 0 25px 0 19px;
-        transform: rotate(90deg);
-    }
-
     &__desc {
-        font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        color: rgba(51, 26, 47, 0.5);
+        color: rgba(51, 26, 47, 0.9);
         max-width: 204px;
+        padding: 2px 0;
+        margin-left: 36px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .logo {
+        padding-left: 0;
+
+        &__icon {
+            width: 47px;
+            height: 44px;
+            margin-right: 7px;
+        }
+
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+            padding: 10px 3px;
+
+            &::after {
+                width: 62px;
+                top: 22px;
+                right: -41px;
+            }
+        }
+
+        &__desc {
+            font-size: 10px;
+            line-height: 14px;
+            padding: 3px 0;
+            margin-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo {
+
+        &__icon {
+            width: 47px;
+            height: 40px;
+            margin-right: 6px;
+            margin-top: 4px;
+        }
+
+        &__title {
+            padding: 8px 0;
+            font-size: 24px;
+
+            &::after {
+                top: 22px;
+                right: -45px;
+            }
+        }
+
+        &__desc {
+            padding: 3px 0;
+            margin-left: 33px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .logo {
+        
+        &__icon {
+            width: 35px;
+            height: 32px;
+            margin-right: 11px;
+        }
+
+        &__title {
+            padding: 8px 0;
+            font-size: 18px;
+            line-height: 22px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__desc {
+            display: none;
+        }
     }
 }

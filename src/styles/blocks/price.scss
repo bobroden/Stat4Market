@@ -1,24 +1,51 @@
 .price {
-    margin-top: 22px;
+    margin-top: 20px;
     display: flex;
 
     &__icon {
         width: 48px;
         height: 48px;
-        margin-right: 25px;
+        margin-right: 22px;
     }
 
     &__text {
         font-weight: 600;
-        font-size: 20px;
+        @extend %semibold-font;
+        font-size: 30px;
         line-height: 29px;
-        color: rgba(51, 26, 47, 0.8);
+        color: $color-desc;
     }
 
     &_selected {
         font-weight: 700;
+        @extend %bold-font;
         font-size: 38px;
         line-height: 55px;
-        color: #cf51ce;
+        color: $color-primary;
+    }
+}
+
+@media (max-width: 1280px) {
+    .price {
+        margin-top: 39px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .price {
+        margin-top: 18px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .price {
+        margin-top: 24px;
+        padding-bottom: 6px;
+
+        &__icon {
+            margin-right: 25px;
+        }
     }
 }
